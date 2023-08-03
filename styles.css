@@ -1,0 +1,45 @@
+/* CSS Reset */
+/* Box-sizing, default margins, etc */
+
+/* Typography */
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* Layout */
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .grid {
+    display: grid;
+    gap: 20px;
+  }
+  
+  .hero {
+    grid-template-columns: 1fr; 
+  }
+  
+  .sales-points {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Media Queries */
+  
+  @media (min-width: 600px) {
+  
+    .hero {
+      grid-template-columns: 2fr 1fr;
+    }
+    
+    .sales-points {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+  }
